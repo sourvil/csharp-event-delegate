@@ -10,6 +10,17 @@ namespace csharp_generics
     {
         static void Main(string[] args)
         {
+            Toy<int> toyInt = new Toy<int>(1);
+            Console.WriteLine(toyInt.DefaultValue());
+            Console.WriteLine(toyInt.Value.ToString());
+
+            Toy<string> toyString = new Toy<string>("Burak");
+            Console.WriteLine(toyString.DefaultValue());
+            Console.WriteLine(toyString.Value.ToString());
+
+
+            Console.ReadLine();
+            
         }
     }
 }
